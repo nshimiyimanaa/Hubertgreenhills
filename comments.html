@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head><title>G7P CLASS WEBSITES</title>
+<style>
+
+a:visited {
+  color: pink;
+}
+div {
+  background-color: lightblue;
+}
+
+</style>
+</head>
+
+<body>
+<table border="0" width="1330" height="630">
+  <tr>
+<td colspan="4" bgcolor="#6495ED" height="200"><p align="center"><font size="200" style="color:white;"><font face="Arial">WELCOME </br>TO HUBERT G7P WEBSITE</font></font></td>
+  </tr>
+  <tr>
+     <td rowspan="2" bgcolor="
+#7FFF00" width=200" height="300"><p>-<a href="About us.html" width="30" heigth="30">About us</a><br/><p>-<a href="https://www.youtube.com">Link to youtube</a></br><p>-<a href="https://fr-fr.facebook.com/">Link to facebook</a></br><p>-<a href="https://www.google.com/">Link to google</a></br></p><p>-<a href="Advertisement.html">Advertisement</a></br></p></td>
+     <td height="50" bgcolor="
+#FFFF00"><a href="MYWEBSITEGHA.html"><img src="MAINBUTTON.jpg"></a></td>
+     <td height="50" bgcolor="
+#FFFF00"><a href="Homework page.html"><img src="HWBUTTON.jpg"></td>
+     <td height="50" bgcolor="
+#FFFF00"><a href="comments.html"><img src="COMMENTBTN.jpg"></td>
+  </tr>
+  <tr>
+    <td colspan="3">SEE COMMENTS
+
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+      
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        
+      
+    }
+
+    .commentBox {
+        padding: 1%;
+        width: 96%;
+        border: 1px solid #000;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+    }
+
+    .leftPanelImg {
+        width: 10%;
+        float: left;
+    }
+
+    .leftPanelImg img {
+        border-radius: 100%
+    }
+
+    .rightPanel {
+        width: 85%;
+        float: left;
+        margin-left: 1%;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .form {
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .form input[type="text"],
+    .form textarea,
+    .form imput[type="date"] {
+        border: 1px solid #000;
+        padding: 2px;
+        width: 300px;
+    }
+</style>
+<div class='form'align="left">
+    <h5>Add Comments</h5>
+    Name: <input type="text" id="name" /> <br/><br /> Date: <input type="date" id="date" /> <br/><br /> Body: <textarea rows="5" col "30" id="bodyText"></textarea><br /><br />
+    <input type="button" id="addComent" value="Add Comment" />
+</div>
+<div id='container'>
+
+</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    function render(data) {
+
+        var html = "<div class='commentBox'><div class='leftPanelImg'><img src='http://via.placeholder.com/100x100'/></div><div class='rightPanel'><span>" + data.name + "</span><div class='date'>" + data.date + "</div><p>" + data.body + "</p></div><div class='clear'></div></div>";
+
+        $('#container').append(html);
+
+    }
+
+    $(document).ready(function() {
+
+        var coment = [{
+            "name": "username",
+            "date": "01 Apr, 2017",
+            "body": "this is a comment 1"
+        }];
+
+        for (var i = 0; i < coment.length; i++) {
+            render(coment[i]);
+
+        }
+
+        $('#addComent').click(function() {
+            var addObj = {
+                "name": $('#name').val(),
+                "date": $('#date').val(),
+                "body": $('#bodyText').val()
+            };
+
+            coment.push(addObj);
+            render(addObj);
+            $('#name').val('');
+            $('#date').val('dd/mm/yyyy');
+            $('#bodyText').val('');
+        });
+    });
+</script>
+
+
+
+</td>
+ <td></td>
+<td ></td> 
+
+  </tr>  
+  <tr>
+     <td colspan="4" bgcolor="#FFA500"><p align="center" >Copyright@hubert</td>
+  </tr>
+</table>
+</body>
+</html>
